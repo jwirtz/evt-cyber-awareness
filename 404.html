@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Redirecting</title>
+<script>
+  // Case-insensitive catch for the awareness page so any casing of
+  // /security-awareness lands on the real page instead of a 404.
+  (function () {
+    var p = location.pathname.replace(/\/+$/, '').toLowerCase();
+    if (p.endsWith('/security-awareness') || p === '/security-awareness') {
+      location.replace('/SECURITY-AWARENESS/');
+    } else {
+      location.replace('/SECURITY-AWARENESS/');
+    }
+  })();
+</script>
+</head>
+<body>
+<p>Redirecting… if nothing happens, <a href="/SECURITY-AWARENESS/">click here</a>.</p>
+</body>
+</html>
